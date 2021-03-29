@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/DotNet/HelloVisualBasic/bin/Debug/net5.0
+/DotNet/HelloVisualBasic/obj
+/DotNet/HelloWorld/.vscode
+/DotNet/HelloWorld/bin/Debug/net5.0
+/DotNet/HelloWorld/obj
+/DotNet/KysyNimi/.vscode
+/DotNet/KysyNimi/bin/Debug/net5.0
+/DotNet/KysyNimi/obj
+/DotNet/LukujenSumma/.vscode
+/DotNet/LukujenSumma/bin/Debug/net5.0
+/DotNet/LukujenSumma/obj
+/DotNet/Muuttujat/.vscode
+/DotNet/Muuttujat/obj
+/DotNet/TiedostonLukujenSumma/bin/Debug/net5.0
+/DotNet/TiedostonLukujenSumma/obj
