@@ -8,12 +8,12 @@ namespace OlioOhjelmointi2
         {
             Console.WriteLine("Moikka Visual Studio!");
 
-            Auto auto = new()
+            Auto auto = new(160)
             {
                 // Nopeus = 0
             };
 
-            Auto auto2 = new()
+            Auto auto2 = new(210)
             {
                 // Nopeus = 0
             };
@@ -26,7 +26,7 @@ namespace OlioOhjelmointi2
             Console.WriteLine(auto.Nopeus);  // tulostaa: 15
             Console.WriteLine(auto2.Nopeus); // tulostaa: 0
 
-            Urheiluauto u = new()
+            Urheiluauto u = new(300)
             {
                 KattoAlhaalla = true
             };
