@@ -8,6 +8,21 @@ namespace OlioOhjelmointi2
         {
             Console.WriteLine("Moikka Visual Studio!");
 
+            Auto auto = new()
+            {
+                Nopeus = 0
+            };
+
+            Auto auto2 = new()
+            {
+                Nopeus = 0
+            };
+            auto.Kiihdytä();
+            auto.Kiihdytä();
+            auto.Kiihdytä();
+            Console.WriteLine(auto.Nopeus);  // tulostaa: 15
+            Console.WriteLine(auto2.Nopeus); // tulostaa: 0
+
             // C# 9.0 (2020) alkaen:
             Asiakas asiakas = new()
             {
