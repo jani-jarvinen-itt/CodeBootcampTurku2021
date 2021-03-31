@@ -23,8 +23,13 @@ namespace OlioOhjelmointi2
 
             // auto2.Nopeus = 8421;
 
-            Console.WriteLine(auto.HaeNopeus());  // tulostaa: 15
-            Console.WriteLine(auto2.HaeNopeus()); // tulostaa: 0
+            Console.WriteLine(auto.Nopeus);  // tulostaa: 15
+            Console.WriteLine(auto2.Nopeus); // tulostaa: 0
+
+            Urheiluauto u = new()
+            {
+                KattoAlhaalla = true
+            };
 
             // C# 9.0 (2020) alkaen:
             Asiakas asiakas = new()
