@@ -10,6 +10,8 @@ namespace OlioOhjelmointi2
     {
         public DateTime Päivämäärä { get; set; }
 
+        public Asiakas Tilaaja { get; set; }
+
         public string Tuote { get; set; }
 
         public int Lukumäärä { get; set; }

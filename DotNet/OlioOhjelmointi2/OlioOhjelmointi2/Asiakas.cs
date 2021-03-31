@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OlioOhjelmointi2
 {
-    class Asiakas
+    public class Asiakas
     {
         public string Nimi { get; set; }
 
