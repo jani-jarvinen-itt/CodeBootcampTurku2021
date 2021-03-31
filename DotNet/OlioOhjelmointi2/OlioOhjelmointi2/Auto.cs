@@ -8,7 +8,7 @@ namespace OlioOhjelmointi2
 {
     public class Auto
     {
-        public int Nopeus { get; set; }
+        private int Nopeus { get; set; }
 
         public void Kiihdytä()
         {
@@ -18,6 +18,11 @@ namespace OlioOhjelmointi2
         public void Jarruta()
         {
             Nopeus -= 5;
+        }
+
+        public int HaeNopeus()
+        {
+            return Nopeus;
         }
     }
 }
