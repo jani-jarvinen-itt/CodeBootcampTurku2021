@@ -3,6 +3,30 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Tervetuloa!</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <input type="number" id="luku1" />
+    <input type="number" id="luku2" />
+
+    <button id="laskeNappi">Laske</button>
 </div>
+
+@section scripts
+{
+    <script type="text/javascript">
+
+        console.log("Skriptin suoritus alkaa.");
+        $("#laskeNappi").click(function () {
+
+            console.log("Nappia klikattu.");
+
+            const luku1 = $("#luku1").val();
+            const luku2 = $("#luku2").val();
+
+            const summa = parseInt(luku1) + parseInt(luku2);
+            alert("Summa on: " + summa);
+        });
+
+    </script>
+}
