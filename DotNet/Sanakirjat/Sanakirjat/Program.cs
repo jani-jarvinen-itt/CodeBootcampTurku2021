@@ -71,6 +71,11 @@ namespace Sanakirjat
             tehtävät[Prioriteetti.Tavallinen].Add("Käy kaupassa.");
             tehtävät[Prioriteetti.Tavallinen].Add("Vie koira lenkille.");
             tehtävät[Prioriteetti.Korkea].Add("Vie roskat.");
+
+            // sisäkkäinen
+            Dictionary<int, Dictionary<string, Prioriteetti>> testi = new();
+            testi.Add(100, new Dictionary<string, Prioriteetti>());
+            testi[100].Add("AAAA", Prioriteetti.Tavallinen);
         }
     }
 }
