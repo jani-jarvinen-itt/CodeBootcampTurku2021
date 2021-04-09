@@ -27,13 +27,30 @@ namespace Sanakirjat
                 Console.WriteLine(avain + ": " + nimi);
             }
 
+            // oman luokan käyttö
+            Console.WriteLine();
+            Dictionary<string, Pelihahmo> pelihahmot = new();
+            Pelihahmo p1 = new()
+            {
+                Pistemäärä = 50,
+                Elinvoima = 88,
+                AmmustenMäärä = 3200
+            };
+            Pelihahmo p2 = new()
+            {
+                Pistemäärä = 143,
+                Elinvoima = 66,
+                AmmustenMäärä = 412
+            };
 
+            pelihahmot.Add("ShadowRider", p1);
+            pelihahmot.Add("LightWarrior", p2);
 
-
-
-
-
-            /*Dictionary<int, Pelihahmo> pelihahmot = new();*/
+            foreach (string nimi in pelihahmot.Keys)
+            {
+                Pelihahmo hahmo = pelihahmot[nimi];
+                Console.WriteLine(nimi + ": " + hahmo.Elinvoima);
+            }
         }
     }
 }
