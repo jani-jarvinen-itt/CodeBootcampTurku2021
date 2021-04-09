@@ -39,14 +39,36 @@ namespace GeneerisetTietotyypit
                 Huippunopeus = 230
             };
 
+            Urheiluauto u = new()
+            {
+                Merkki = "Porsche",
+                Huippunopeus = 315,
+                KattoAlhaalla = true
+            };
+
             List<Auto> autot = new();
             autot.Add(a1);
             autot.Add(a2);
+            autot.Add(u);
 
             foreach (Auto auto in autot)
             {
-                Console.WriteLine(auto.Merkki);
+                if (auto is Auto)
+                {
+                    Console.WriteLine("Auto: " + auto.Merkki);
+                }
+                if (auto is Urheiluauto urhAuto)
+                {
+                    Console.WriteLine("Urheiluauto: katto alhaalla = "
+                        + urhAuto.KattoAlhaalla);
+                }
             }
+
+            // yleinen lista
+            List<object> oliot = new();
+            oliot.Add(1234);
+            oliot.Add("ABCD");
+            oliot.Add(a2);
         }
     }
 }
