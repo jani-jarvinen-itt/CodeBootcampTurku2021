@@ -67,7 +67,7 @@ namespace Sanakirjat
             tehtävät.Add(Prioriteetti.Korkea, new List<string>());
             tehtävät.Add(Prioriteetti.Superkorkea, new List<string>());
 
-            tehtävät[Prioriteetti.Matala].Add("Paikka fillarin rengas.");
+            tehtävät[Prioriteetti.Matala].Add("Paikkaa fillarin rengas.");
             tehtävät[Prioriteetti.Tavallinen].Add("Käy kaupassa.");
             tehtävät[Prioriteetti.Tavallinen].Add("Vie koira lenkille.");
             tehtävät[Prioriteetti.Korkea].Add("Vie roskat.");
