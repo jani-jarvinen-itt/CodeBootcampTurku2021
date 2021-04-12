@@ -23,6 +23,10 @@ namespace Kulttuurit
             Console.WriteLine(nyt.ToString("dddd", fi));
             Console.WriteLine(nyt.ToString("dddd", enUs));
             Console.WriteLine(nyt.ToString("dddd", de));
+
+            Console.WriteLine(nyt.ToString("R"));
+            Console.WriteLine(nyt.ToString("s"));
+
         }
     }
 }
