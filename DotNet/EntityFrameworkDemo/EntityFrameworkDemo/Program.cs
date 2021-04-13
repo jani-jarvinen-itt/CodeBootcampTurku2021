@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntityFrameworkDemo.Models;
+using System;
 
 namespace EntityFrameworkDemo
 {
@@ -7,6 +8,12 @@ namespace EntityFrameworkDemo
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            NorthwindContext konteksti = new();
+            foreach (var asiakas in konteksti.Customers)
+            {
+                Console.WriteLine(asiakas.CompanyName);
+            }
         }
     }
 }
