@@ -1,0 +1,12 @@
+﻿Entity-mallin luontiohjeet
+--------------------------
+Asenna seuraavat NuGet-paketit:
+
+1. Microsoft.EntityFrameworkCore
+2. Microsoft.EntityFrameworkCore.Tools
+3. Microsoft.EntityFrameworkCore.SqlServer
+
+
+Aja seuraava komento Package Manager Console -ikkunassa (PMC):
+
+Scaffold-DbContext "Server=localhost\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
