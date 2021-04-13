@@ -31,14 +31,32 @@ namespace AdoNetDemo
             // INSERT-esimerkki
             Console.WriteLine("Aloitetaan uuden asiakkaan lisääminen...");
             Asiakas asiakas = LueTiedot();
+
+            /*
+            // Vaarallinen tapa, älä käytä! SQL-injektion riski ilmeinen!
             sql = "INSERT INTO [dbo].[Customers] ([CustomerID],[CompanyName],[ContactName],[ContactTitle],[Address], "+
                   "[City],[Region],[PostalCode],[Country],[Phone],[Fax]) "+
                   $"VALUES ('{asiakas.Avain}', '{asiakas.YrityksenNimi}', "+
                   $"'{asiakas.Kontaktihenkilö}', '{asiakas.Titteli}', "+
                   "'Teollisuuskatu 17', 'Forssa', "+
                   "NULL, '21450', 'Finland', '0400 98765', NULL)";
+            */
+
+            // parametroitu kysely
+            sql = "INSERT INTO [dbo].[Customers] ([CustomerID],[CompanyName],[ContactName],[ContactTitle],[Address], " +
+                  "[City],[Region],[PostalCode],[Country],[Phone],[Fax]) " +
+                  $"VALUES (@avain, @nimi, @kontakti, @titteli, " +
+                  "'Teollisuuskatu 17', 'Forssa', " +
+                  "NULL, '21450', 'Finland', '0400 98765', NULL)";
             SqlCommand komento2 = new(sql, yhteys);
+
+            // parametrien arvojen asetus
+            komento2.Parameters.AddWithValue("@avain", asiakas.Avain);
+            komento2.Parameters.AddWithValue("@nimi", asiakas.YrityksenNimi);
+            komento2.Parameters.AddWithValue("@kontakti", asiakas.Kontaktihenkilö);
+            komento2.Parameters.AddWithValue("@titteli", asiakas.Titteli);
             int rivienMäärä = komento2.ExecuteNonQuery();
+
             Console.WriteLine($"Lisätty {rivienMäärä} uusi asiakas tietokantaan.");
         }
 
