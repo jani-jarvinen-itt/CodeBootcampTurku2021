@@ -63,3 +63,6 @@ DotNet/Päivämäärät/.vs/Päivämäärät/DesignTimeBuild/.dtbcache.v2
 /DotNet/EntityFrameworkDemo/.vs/EntityFrameworkDemo/v16
 /DotNet/EntityFrameworkDemo/EntityFrameworkDemo/bin/Debug/net5.0
 /DotNet/EntityFrameworkDemo/EntityFrameworkDemo/obj
+/DotNet/AspNetWebApiDemo/.vs/AspNetWebApiDemo
+/DotNet/AspNetWebApiDemo/AspNetWebApiDemo/bin/Debug/net5.0
+/DotNet/AspNetWebApiDemo/AspNetWebApiDemo/obj
