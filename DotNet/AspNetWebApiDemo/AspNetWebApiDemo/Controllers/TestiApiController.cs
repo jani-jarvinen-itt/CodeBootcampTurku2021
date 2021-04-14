@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AspNetWebApiDemo.Mallit;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,18 @@ namespace AspNetWebApiDemo.Controllers
             Random satunnainen = new();
             int luku = satunnainen.Next(1, 10000);
             return luku;
+        }
+
+        [HttpGet]
+        [Route("auto")]
+        public Auto AutoEsimerkki()
+        {
+            return new()
+            {
+                Merkki = "Porsche",
+                Malli = "Taycan",
+                Huippunopeus = 300
+            };
         }
 
         /*[HttpGet]
