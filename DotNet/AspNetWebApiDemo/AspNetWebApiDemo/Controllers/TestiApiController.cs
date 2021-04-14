@@ -7,9 +7,15 @@ using System.Threading.Tasks;
 
 namespace AspNetWebApiDemo.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/testi")]
     [ApiController]
     public class TestiApiController : ControllerBase
     {
+        public int Luku()
+        {
+            Random satunnainen = new();
+            int luku = satunnainen.Next(1, 10000);
+            return luku;
+        }
     }
 }
