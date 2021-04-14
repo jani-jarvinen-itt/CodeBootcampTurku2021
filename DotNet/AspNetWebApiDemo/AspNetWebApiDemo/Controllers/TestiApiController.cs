@@ -11,6 +11,7 @@ namespace AspNetWebApiDemo.Controllers
     [ApiController]
     public class TestiApiController : ControllerBase
     {
+        [HttpGet]
         [Route("satunnainen")]
         public int Luku()
         {
@@ -19,7 +20,9 @@ namespace AspNetWebApiDemo.Controllers
             return luku;
         }
 
-        [Route("kellonaika")]
+        /*[HttpGet]
+        [Route("kellonaika")]*/
+        [HttpGet("kellonaika")]
         public DateTime Kellonaika()
         {
             return DateTime.Now;
