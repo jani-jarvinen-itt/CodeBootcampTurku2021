@@ -5,10 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import PieniKomponentti from './PieniKomponentti';
 import LuokkaKomponentti from './LuokkaKomponentti';
+import PropsTesti from './PropsTesti';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <PropsTesti nimi="Teppo" />
+    <PropsTesti nimi="Kalle" />
+    <PropsTesti nimi="Maija" />
     <PieniKomponentti />
     <LuokkaKomponentti />
   </React.StrictMode>,
