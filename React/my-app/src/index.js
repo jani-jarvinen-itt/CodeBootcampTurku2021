@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import PieniKomponentti from './PieniKomponentti';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <PieniKomponentti />
   </React.StrictMode>,
   document.getElementById('root')
 );
