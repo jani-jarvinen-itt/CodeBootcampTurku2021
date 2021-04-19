@@ -1,0 +1,30 @@
+{
+    "nimi": "Teppo Testaaja",
+    "ikä": 33
+}
+
+
+--------------------------------
+
+
+public class OmaData {
+    public string Nimi { get; set; }
+    public int Ikä { get; set; }
+}
+
+
+--------------------------------
+
+using System.IO;
+using System.Text.Json;
+...
+
+string json = File.ReadAllText(@"C:\Data\Tiedosto.json");
+OmaData henkilö = JsonSerializer.Deserialize<OmaData>(json);
+
+--------------------------------
+
+
+OmaTietokantaEntities konteksti = new();
+konteksti.Henkilöt.Add(henkilö);
+konteksti.SaveChanges();
