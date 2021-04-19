@@ -3,20 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import PieniKomponentti from './PieniKomponentti';
-import LuokkaKomponentti from './LuokkaKomponentti';
-import PropsTesti from './PropsTesti';
-import Silmukka from './Silmukka';
+import ToDoLista from './ToDoLista';
+// import PieniKomponentti from './PieniKomponentti';
+// import LuokkaKomponentti from './LuokkaKomponentti';
+// import PropsTesti from './PropsTesti';
+// import Silmukka from './Silmukka';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <ToDoLista />
+
+    {/*
     <Silmukka maksimi={20} />
     <PropsTesti nimi="Teppo" />
     <PropsTesti nimi="Kalle" />
     <PropsTesti nimi="Maija" />
     <PieniKomponentti />
     <LuokkaKomponentti />
+    */}
   </React.StrictMode>,
   document.getElementById('root')
 );
