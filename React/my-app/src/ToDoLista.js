@@ -48,7 +48,7 @@ class ToDoLista extends React.Component {
 
             for (let indeksi = 0; indeksi < merkinnät.length; indeksi++) {
                 const otsikko = merkinnät[indeksi].title;
-                otsikot.push(<p>Tehtävä: {otsikko}</p>)
+                otsikot.push(<p key={indeksi}>Tehtävä: {otsikko}</p>)
             }
         }
 
