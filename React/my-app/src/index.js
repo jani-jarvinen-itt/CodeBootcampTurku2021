@@ -6,10 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import PieniKomponentti from './PieniKomponentti';
 import LuokkaKomponentti from './LuokkaKomponentti';
 import PropsTesti from './PropsTesti';
+import Silmukka from './Silmukka';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Silmukka maksimi={20} />
     <PropsTesti nimi="Teppo" />
     <PropsTesti nimi="Kalle" />
     <PropsTesti nimi="Maija" />
