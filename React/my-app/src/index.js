@@ -4,11 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import PieniKomponentti from './PieniKomponentti';
+import LuokkaKomponentti from './LuokkaKomponentti';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <PieniKomponentti />
+    <LuokkaKomponentti />
   </React.StrictMode>,
   document.getElementById('root')
 );
