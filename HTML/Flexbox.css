@@ -12,9 +12,12 @@
     background-color: firebrick;
 }
 
-/* 
-@media screen and (min-width: 600px) {
-    body {
-        background-color: blue;
+.flex-alue {
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-alue {
+        flex-direction: column;
     }
-} */
+}
