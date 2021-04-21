@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ToDoLista from './ToDoLista';
+import AsiakkaatTaulukko from './AsiakkaatTaulukko';
+// import App from './App';
+// import ToDoLista from './ToDoLista';
 // import PieniKomponentti from './PieniKomponentti';
 // import LuokkaKomponentti from './LuokkaKomponentti';
 // import PropsTesti from './PropsTesti';
@@ -11,10 +12,11 @@ import ToDoLista from './ToDoLista';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    <ToDoLista />
+    <AsiakkaatTaulukko />
 
     {/*
+    <App />
+    <ToDoLista />
     <Silmukka maksimi={20} />
     <PropsTesti nimi="Teppo" />
     <PropsTesti nimi="Kalle" />
